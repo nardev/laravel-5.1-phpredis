@@ -1,0 +1,21 @@
+{
+    "name": "nardev/laravel-5.1-phpredis",
+    "version": "1.0.0",
+    "description": "Use phpredis as the redis connection in Laravel 5.1",
+    "keywords": [ "laravel", "redis", "phpredis", "laravel 5.1" ],
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "Vedran Alajbegovic",
+            "email": "vedran@nardev.org"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-0": {
+            "Nardev\\PhpRedis": "src/"
+        }
+    }
+}
