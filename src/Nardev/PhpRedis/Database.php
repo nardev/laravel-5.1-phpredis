@@ -11,9 +11,10 @@ class Database extends \Illuminate\Redis\Database {
      * Create a new aggregate client supporting sharding.
      *
      * @param  array  $servers
+     * @param  array  $options
      * @return array
      */
-    protected function createAggregateClient(array $servers) {
+    protected function createAggregateClient(array $servers, array $options = []) {
         $options = array(
         	'lazy_connect' => true,
 	        'pconnect'     => false,
@@ -73,9 +74,10 @@ class Database extends \Illuminate\Redis\Database {
      * Create an array of single connection clients.
      *
      * @param  array  $servers
+     * @param  array  $options
      * @return array
      */
-    protected function createSingleClients(array $servers) {
+    protected function createSingleClients(array $servers, array $options = []) {
         $clients = array();
 
         foreach ($servers as $key => $server) {

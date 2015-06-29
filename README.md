@@ -1,9 +1,7 @@
-PhpRedis Connector for Laravel
+PhpRedis Connector for Laravel 5.1
 ==============================
 
-[Laravel] by default uses [Predis] to connect to Redis.
-
-On servers which have [PhpRedis] installed, you may want to use it instead of Predis for performance. This package provides a drop-in replacement for the `RedisServiceProvider` that comes with Laravel.
+placement for the `RedisServiceProvider` that comes with Laravel.
 
 Requirements
 ------------
